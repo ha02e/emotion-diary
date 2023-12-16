@@ -1,4 +1,4 @@
-import { useRef, useState, useContext } from "react";
+import { useRef, useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DiaryDispatchContext } from "./../App";
 
@@ -41,7 +41,7 @@ const getStringDate = (date) => {
   return date.toISOString().slice(0, 10);
 };
 
-const DiaryEditor = () => {
+const DiaryEditor = ({ isEdit, originData }) => {
   const contentRef = useRef();
   const [content, setContent] = useState("");
   const [emotion, setEmotion] = useState(3);
@@ -64,6 +64,15 @@ const DiaryEditor = () => {
     onCreate(date, content, emotion);
     navigate("/", { replace: true });
   };
+
+  useEffect(() => {
+    if (isEdit) {
+      //수정하기 페이지
+      setDate(getStringDate(new Date(parseInt(originData.date))));
+      setEmotion(originData.emotion);
+      setContent(originData.content);
+    }
+  }, [isEdit, originData]);
 
   return (
     <div className="DiaryEditor">

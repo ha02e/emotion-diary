@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;400&family=Rajdhani&family=Yeon+Sung&display=swap");
 
 body {
-  background-color: #f6f6f6;
+  background-color: #fff6ed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ body {
 
 @media (min-width: 650px) {
   .App {
-    width: 90vw;
+    width: 60vw;
   }
 }
 
