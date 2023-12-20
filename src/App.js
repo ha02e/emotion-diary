@@ -60,7 +60,7 @@ function App() {
 
       dispatch({ type: "INIT", data: diaryList }); //diaryList를 data 스테이트의 초기값으로 설정
     }
-  });
+  }, []);
 
   const dataId = useRef(6);
 
