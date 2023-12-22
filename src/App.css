@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;400&family=Rajdhani&family=Yeon+Sung&display=swap");
 
 body {
-  background-color: #fff6ed;
+  background-color: #f4f7f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +213,7 @@ header button {
 
 .DiaryEditor .emotion_list_wrapper {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 2%;
 }
 
@@ -252,12 +252,11 @@ header button {
 }
 
 .EmotionItem img {
-  width: 50%;
-  margin-bottom: 10px;
+  width: 80%;
 }
 
 .EmotionItem span {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .EmotionItem_off {
@@ -265,28 +264,35 @@ header button {
 }
 
 .EmotionItem_on_1 {
-  background-color: #64c964;
-  color: white;
+  background-color: #c1d8e4;
 }
 
 .EmotionItem_on_2 {
-  background-color: #9dd772;
-  color: white;
+  background-color: #edce76;
 }
 
 .EmotionItem_on_3 {
-  background-color: #fdce17;
-  color: white;
+  background-color: #ed8c91;
 }
 
 .EmotionItem_on_4 {
-  background-color: #fd8446;
-  color: white;
+  background-color: #cce2de;
 }
 
 .EmotionItem_on_5 {
-  background-color: #fd565f;
-  color: white;
+  background-color: #8e7a94;
+}
+
+.EmotionItem_on_6 {
+  background-color: #abb4b2;
+}
+
+.EmotionItem_on_7 {
+  background-color: #d6674c;
+}
+
+.EmotionItem_on_8 {
+  background-color: #a7ac8e;
 }
 
 /* Diary */
@@ -311,12 +317,16 @@ header button {
 
 .DiaryPage .diary_img_wrapper {
   width: 250px;
-  height: 200px;
+  height: 160px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.DiaryPage .diary_img_wrapper img {
+  width: 94%;
 }
 
 .DiaryPage .emotion_descript {
