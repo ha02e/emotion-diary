@@ -15,6 +15,11 @@ const Diary = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `${id}번 감정일기`;
+  }, []);
+
+  useEffect(() => {
     if (diaryList.length >= 1) {
       const targetDiary = diaryList.find(
         (it) => parseInt(it.id) === parseInt(id)
@@ -56,7 +61,7 @@ const Diary = () => {
           <section>
             <h4>오늘의 감정</h4>
             <div className="diary_img_wrapper">
-              <img src={curEmotionData.emotion_img} />
+              <img src={curEmotionData.emotion_img} alt="emotion" />
               <div className="emotion_descript">
                 {curEmotionData.emotion_descript}
               </div>

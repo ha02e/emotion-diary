@@ -10,6 +10,11 @@ const Edit = () => {
 
   const diaryList = useContext(DiaryStateContext);
 
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `${id}번 감정일기 수정`;
+  }, []);
+
   // 컴포넌트가 마운트 되었을 때 실행
   useEffect(() => {
     if (diaryList.length >= 1) {
