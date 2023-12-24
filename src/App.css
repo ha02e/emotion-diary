@@ -55,17 +55,17 @@ body {
 }
 
 .MyButton_default {
-  background-color: #ececec;
+  background-color: #e9efef;
   color: black;
 }
 
 .MyButton_positive {
-  background-color: #64c964;
+  background-color: #5190a2;
   color: white;
 }
 
 .MyButton_negative {
-  background-color: #fd565f;
+  background-color: #d6674c;
   color: white;
 }
 
@@ -122,7 +122,7 @@ header button {
   margin-right: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ececec;
+  background-color: #e9efef;
 
   padding: 10px 20px;
   cursor: pointer;
@@ -189,7 +189,7 @@ header button {
 .DiaryEditor .input_date {
   border: none;
   border-radius: 5px;
-  background-color: #ececec;
+  background-color: #e9efef;
 
   padding: 10px 20px;
 
@@ -215,7 +215,7 @@ header button {
 
   border: none;
   border-radius: 5px;
-  background-color: #ececec;
+  background-color: #e9efef;
 
   padding: 20px;
 }
@@ -247,7 +247,7 @@ header button {
 }
 
 .EmotionItem_off {
-  background-color: #ececec;
+  background-color: #e9efef;
 }
 
 .EmotionItem_on_1 {
